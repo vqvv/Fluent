@@ -45,6 +45,7 @@ return function(Title, Desc, Parent, Hover)
 		Position = UDim2.fromOffset(10, 0),
 		Size = UDim2.new(1, -28, 0, 0),
 	}, {
+		print("Added UIListLayout")
 		New("UIListLayout", {
 			SortOrder = Enum.SortOrder.LayoutOrder,
 			VerticalAlignment = Enum.VerticalAlignment.Center,
