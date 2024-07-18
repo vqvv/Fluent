@@ -1,29 +1,26 @@
 <img src="Assets/logodark.png#gh-dark-mode-only" alt="fluent">
 <img src="Assets/logolight.png#gh-light-mode-only" alt="fluent">
 
-## ⚡ Features
-
+### ⚡ Features
 - Modern design
 - Many customization options
-- Almost any UI Element you would ever need 
-<br/>
+- Almost any UI Element you would ever need
+- Tons of icons from: [Lucide](https://lucide.dev/icons)
 
-## 🔌 Installation
-
-You can load Fluent through a GitHub Release:
+### 🔌 Installation
+Load **Fluent**'s library through GitHub:
 
 ```lua
-local Fluent = loadstring(game:HttpGet("https://github.com/mr-suno/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet(
+  "https://github.com/mr-suno/Fluent/releases/latest/download/main.lua"
+))()
 ```
-<br/>
 
-## 📜 Usage
+### 📜 Usage
+### [Example Script](https://github.com/mr-suno/Fluent/blob/master/Example.lua)
+* Showcases how to use the UI library
 
-[Example Script](https://github.com/mr-suno/Fluent/blob/master/Example.lua)
-<br/>
-
-## Credits
-
+### Credits
 - [Dawid](https://github.com/dawid-scripts) - Original author of the UI library
 
 - [richie0866/remote-spy](https://github.com/richie0866/remote-spy) - Assets for the UI, some of the code
