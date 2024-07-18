@@ -48,6 +48,7 @@ return function(Title, Desc, Parent, Hover)
 		New("UIListLayout", {
 			SortOrder = Enum.SortOrder.LayoutOrder,
 			VerticalAlignment = Enum.VerticalAlignment.Center,
+			Padding = UDim.new(0, 3) -- Add Padding for good looking UI.
 		}),
 		New("UIPadding", {
 			PaddingBottom = UDim.new(0, 13),
