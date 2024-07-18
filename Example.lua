@@ -49,7 +49,8 @@ Fluent:Notify({
 
 local Paragraph = Tabs.Main:AddParagraph({
    Title        = "Paragraph",
-   Content      = "This is a..\nMulti-lined paragraph!"
+   Content      = "This is a..\nMulti-lined paragraph!",
+   Duration     = 3                            -- In seconds, how long you want the notification to show.
 })
 
 Tabs.Main:AddButton({
@@ -64,7 +65,7 @@ Tabs.Main:AddButton({
 
             {
                Title    = "Confirm",
-               Callback = function()          -- The callback here is completely optional.
+               Callback = function()           -- The callback here is completely optional.
                   
                   -- What you want the button to do, when pressed.
 
@@ -83,4 +84,4 @@ Tabs.Main:AddButton({
 
 -- New stuff coming soon ...
 
-Window:SelectTab(1)                            -- Selects the main tab
+Window:SelectTab(1)
