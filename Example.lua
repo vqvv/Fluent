@@ -82,3 +82,5 @@ Tabs.Main:AddButton({
 })
 
 -- New stuff coming soon ...
+
+Window:SelectTab(1)                            -- Selects the main tab
