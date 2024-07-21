@@ -17,6 +17,7 @@ return function(Title, Desc, Parent, Hover)
 		Size = UDim2.new(1, 0, 0, 14),
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 		BackgroundTransparency = 1,
+		RichText = true,
 		ThemeTag = {
 			TextColor3 = "Text",
 		},
@@ -33,6 +34,7 @@ return function(Title, Desc, Parent, Hover)
 		AutomaticSize = Enum.AutomaticSize.Y,
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, 0, 0, 14),
+		RichText = true,
 		ThemeTag = {
 			TextColor3 = "SubText",
 		},
