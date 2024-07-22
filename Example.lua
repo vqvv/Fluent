@@ -1,5 +1,5 @@
 local Fluent = loadstring(game:HttpGet(
-  "https://github.com/mr-suno/Fluent/releases/latest/download/main.lua"
+  "https://github.com/mr-suno/Fluent/releases/download/1.1.2/main.lua"
 ))()
 
 
