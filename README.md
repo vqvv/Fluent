@@ -12,7 +12,7 @@ Load **Fluent**'s library through GitHub:
 
 ```lua
 local Fluent = loadstring(game:HttpGet(
-  "https://github.com/mr-suno/Fluent/releases/download/1.1.2/build.lua"
+  "https://github.com/mr-suno/Fluent/releases/latest/download/main.lua"
 ))()
 ```
 
