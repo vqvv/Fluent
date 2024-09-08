@@ -3,12 +3,6 @@ local Fluent = loadstring(game:HttpGet(
 ))()
 
 
--- Optional libraries:
-
-local SaveManager      = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
-
-
 -- Creating a Window:
 
 local Window = Fluent:CreateWindow({
@@ -70,7 +64,11 @@ Tabs.Main:AddButton({
                   
                   -- What you want the button to do, when pressed.
 
-                  print("User confirmed the dialog!")
+                  Fluent:Notify({
+                      Title    = "Thanks!",
+                      Content  = "Thank you for clicking me, nobody ever does...",
+                      Duration = 3
+                  })
 
                end
             },
@@ -106,14 +104,25 @@ end)
 
 
 Tabs.Main:AddSlider("Flag", {
-    Title = "A Surprise Slider.",
+    Title       = "A Surprise Slider.",
     Description = "One with real functionality!",
-    Default = 16,
-    Rounding = 0,                                -- How far back the decimal point goes. (0 being a whole number)
-    Min = 16,                                    -- Minimum value for the slider to go.
-    Max = 100,                                   -- Maximum value, the slider cannot go past this.
-    Callback = function(Value)
+    Default     = 16,
+    Rounding    = 0,                             -- How far back the decimal point goes. (0 being a whole number)
+    Min         = 16,                            -- Minimum value for the slider to go.
+    Max         = 100,                           -- Maximum value, the slider cannot go past this.
+    Callback    = function(Value)
         game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+})
+
+
+Tabs.Main:AddDropdown("Flag", {
+    Title       = "Single-Value Dropdown",
+    Description = "You may only select one value at a using me.",
+    Values      = {"First", "Second", "Third", "Fourth"},
+    Multi       = false,
+    Callback    = function(Value)
+        print("I'm " .. Value:lower() .. " in line for lunch.")
     end
 })
 
